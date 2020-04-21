@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.centr{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.conteiner1{
+    background-image: url('./images/stervjatnik.jpg');
+    height: 100vh;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    padding-top: 36px;
+}
+.menu ul{
+    display: flex;
+    justify-content: end;
+
+}
+.menu ul li{
+    padding: 0 4%; 
+    cursor: pointer; 
+}
+.menu ul li:hover a, .menu ul li:hover i{
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 25px;
+}
+.menu ul li a, .menu ul li i{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 10px;
+}
+.content{
+    text-align: center;
+}
+.content h2{
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10vh;
+}
+.content h1{
+    font-size: 144px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.whiteline{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 3px;
+    width: 60px;
+    color: #fff;
+    background-color: #fff;
+   
+}
+.content a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid;
+    color: #fff;
+}
+
+.conteiner2{
+    height: 750px;
+    text-align: center;
+}
+.redline{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 3px;
+    width: 60px;
+    color: red;
+    background-color: red;
+    text-align: center;
+}
+.what{
+    padding-top: 90px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.story{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.greytextcentr{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.cards .item{
+    width: 32%;
+}
+
+.cards .item img{
+    max-width: 100%;
+}
+
+.conteiner3{
+    height: 270px;
+    width: 100%;
+    background-color: #95e1d3;
+}
+.blueline{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    justify-items: stretch;
+}
+.line3{
+    width: 240px;
+    height: 100%;
+    text-align: center;
+    border: 1px #fff;
+    border-style: hidden solid hidden solid;
+}
+.line3 h2{
+    font-size: 60px;
+    color: #fff;
+    transform: translateY(100%);
+}
+.line3 p{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 1.2em;
+    transform: translateY(180%);
+}
+
+.conteiner4{
+    height: 650px;
+
+}
+.meinline4{
+    display: flex;
+    width: 100%;
+    height: 130px;
+    justify-content: center;
+}
+.line4{
+    display: flex;
+    max-width: 400px;
+    width: 30%;
+    
+}
+.we{
+    margin-top: 110px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.amaz{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.line4 p{
+    font-size: 14px;
+    color: #999999;
+}
+.line4 h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+.line4 i{
+    font-size: 30px;
+    padding-right: 30px;
+    color: #95e1d3;
+}
+
+.conteiner5{
+    height: 850px;
+    width: 100%;
+    background-image: url(./images/5ground2.jpg);
+    background-size: cover;
+    /*background-position-y: 30%;*/
+}
+
+
+.conteiner6{
+    height: 900px;
+}
+.meinline6{
+    display: flex;
+    height: 380px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+.line6-1, .line6-2{
+    width: 570px;
+    height: 100%;
+}
+.line6-1{
+    background-image: url(./images/6.jpg);
+    margin-right: 30px;
+}
+.line6-2{
+    background-color: aqua;
+}
+
+
+.cont7{
+    height: 290px;
+    background-color: #f8f8f8;
+}
+
+
+
+.meinline8{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+.line8in{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.line8text{
+    text-align: center;
+    font-size: 12px;
+}
+.line8text h3{
+    padding-top: 1.5em;
+    text-transform: uppercase;
+}
+.line8text p{
+    font-style: italic;
+    color: #5b5c88;
+    padding-top: 1em;
+}
+
+
+.cont9{
+    height: 250px;
+    width: 100%;
+    background-image: url(./images/9.jpg);
+    background-position: center;
+    background-color: #f8f8f8;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+
+.meinline10{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.line10in{
+    width: 25%;
+    line-height: 1px;
+}
+.line10in img{
+    max-width: 100%;
+}
+
+
+.cont11{
+    height: 440px;
+}
+
+
+
+.cont12{
+    height: 830px;
+    background-image: url(./images/12ground2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(white, gray);*/
+}
+.meinline12{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 45px;
+}
+.line12{
+    display: flex;
+    width: 40%;
+    height: 230px;
+}
+.line12 img{
+    size: 110px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.redline12{
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.line12 h3{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.line12 p{
+    font-size: 15px;
+    color: #5b5c88;
+}
+.design{
+    font-style: italic;
+    margin-top: 1em;
+}
+
+
+.meinline13{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+.line13in{
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.line13text{
+    font-size: 12px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e5e5eb;
+}
+.line13text h3{
+    padding-top: 1.5em;
+    text-transform: uppercase;
+}
+.line13text p{
+    color: #5b5c88;
+    padding-top: 1em;
+}
+
+.cont14{
+    height: 200px;
+    background-image: url(./images/14ground2.jpg);
+    text-align: center;
+}
+.cont14 i{
+    font-size: 30px;
+    color: red;
+    padding-top: 55px;
+}
+.cont14 h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+    padding-top: 15px;
+}
+.cont14 span{
+    margin-top: 20px;
+}
+
+
+@media(min-height: 1000px){
+    .content h2{
+        padding-top: 145px;
+    }
+}
+
+@media(max-width: 1024px){
+    .menu{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .cards .item{
+        width: 48%;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 600px){
+    .cards .item img{
+       /* max-width: auto;*/
+        width: 143%;
+    }
+    .cards .item{
+        width: 100%;
+    }
+}
+@media(max-width: 425px){
+
+}
