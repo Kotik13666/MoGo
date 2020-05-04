@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGO</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
-        <section class="conteiner1">
+        
+        <section class="cont1" id="cont1">
             <header class="centr">
                 <span class="logo">MoGo</span>
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <ul>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">SERVICE</a></li>
@@ -24,16 +30,43 @@
                         <li><i class="fas fa-search"></i></li>
                     </ul>
                 </nav>
+                <div class="burger" id="burger">
+                    <span class="burgerlines">&#9776;</span>
+                </div>
             </header>
-            <div class="content centr">
-                <h2>Creative Template</h2>
-                <h1>Welcome<br>
-                    to MoGo</h1>
-                    <span class="whiteline"></span>
-                <a href="#">LEARN MORE</a>
-            </div>
+            <div class="owl-carousel">
+                <div class="content centr">
+                    <h2>Creative Template</h2>
+                    <h1>Welcome<br>
+                        to MoGo</h1>
+                        <span class="whiteline"></span>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="content centr">
+                    <h2>Creative Template</h2>
+                    <h1>Welcome<br>
+                        to MoGo</h1>
+                        <span class="whiteline"></span>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="content centr">
+                    <h2>Creative Template</h2>
+                    <h1>Welcome<br>
+                        to MoGo</h1>
+                        <span class="whiteline"></span>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div class="content centr">
+                    <h2>Creative Template</h2>
+                    <h1>Welcome<br>
+                        to MoGo</h1>
+                        <span class="whiteline"></span>
+                    <a href="#">LEARN MORE</a>
+                </div>
+              </div>
+           
         </section>
-        <section class="conteiner2 centr">
+        <section class="cont2 centr">
             <h2 class="what">What we do</h2>
             <h2 class="story">Story about us</h2>
             <span class="redline"></span>
@@ -42,7 +75,7 @@
                 incididunt ut labore et dolore magna aliqua.<br>
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                 aliquip ex ea commodo consequat. </p>
-            <div class="cards">
+            <div class="cardsblock2">
                 <div class="item"><img src="images/card1.png">
                     <P><i class="fas fa-users" style="font-size: 1.8em;"></i><br>super team</P></div>
                 <div class="item"><img src="images/card2.png">
@@ -51,7 +84,7 @@
                     <P><i class="fas fa-users" style="font-size: 1.8em;"></i><br>super team</P></div>
             </div>
         </section>
-        <section class="conteiner3">
+        <section class="cont3">
             <div class="blueline">
                 <div class="line3">
                     <h2>42</h2>
@@ -118,14 +151,14 @@
                     </div>
             </div>
         </section>
-        <section class="conteiner5">
+        <section class="cont5">
             <h2 class="what">For all devices</h2>
             <h2 class="story">UNIQUE DESIGN</h2>
             <span class="redline"></span>
-            <div></div>
-            <div></div>
+            <div class="centrpad"><img src="./images/5-1.png"></div>
+            <div class="necentrpad"><img src="./images/5-2.png"></div>
         </section>
-        <section class="conteiner6">
+        <section class="cont6">
             <h2 class="what">Service</h2>
             <h2 class="story">WHAT WE DO</h2>
             <span class="redline"></span>
@@ -136,12 +169,101 @@
                   commodo consequat. </p>
             <div class="meinline6">
                 <div class="line6-1"></div>
-                <div class="line6-2"></div>
+                <div class="accordion line6-2" id="accordionExample">
+                    <div class="card" style="padding-bottom: 8px;">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 zagolovok6">
+                          <button class="btn btn-link zagbtt" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="far fa-image"></i> <p class="zagbtttext">PHOTOGRAPHY</p> 
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body body6">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" style="padding-bottom: 8px;">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0 zagolovok6">
+                          <button class="btn btn-link collapsed zagbtt" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-sliders-h"></i> <p class="zagbtttext">CREATIVITY</p> 
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body body6">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0 zagolovok6">
+                          <button class="btn btn-link collapsed zagbtt" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-bullseye"></i> <p class="zagbtttext">DESIGN</p> 
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body body6">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
             
         </section>
         <section class="cont7">
-            <div></div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cont7karusel">
+                            <img class="d-block w-10 cont7img" src="./images/7-1.png">
+                            <div class="cont7text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br>
+                            <span class="redline rl7"></span>
+                            <h2 class="cont7name">Mattew Dix</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cont7karusel">
+                            <img class="d-block w-10 cont7img" src="./images/7-1.png">
+                            <div class="cont7text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br>
+                                <span class="redline rl7"></span>
+                                <h2 class="cont7name">Jaelynn Castillo</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cont7karusel">
+                            <img class="d-block w-10 cont7img" src="./images/7-1.png">
+                            <div class="cont7text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br> 
+                                <span class="redline rl7"></span>
+                                <h2 class="cont7name">  Nick Karvounis</h2>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon clrr" aria-hidden="true"></span>
+                        <span class="sr-only ">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </section>
         <section class="cont8">
             <h2 class="what">Who we are</h2>
@@ -154,21 +276,42 @@
                  aliquip ex ea commodo consequat. </p>
             <div class="meinline8">
                 <div class="line8in">
-                    <div class="line8img"><img src="./images/8-1.jpg"></div>
+                    <div class="line8img"><img src="./images/8-1.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="fas fa-tv"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                        </span> 
+                    </div>
                     <div class="line8text">
-                        <h3>Matthew Dix</h3>
-                        <p>Graphic Design</p>
+                        <h3 class="wow bounceInDown">Matthew Dix</h3>
+                        <p class="wow bounceInDown">Graphic Design</p>
                     </div>
                 </div>
                 <div class="line8in">
-                    <div class="line8img"><img src="./images/8-2.jpg"></div>
+                    <div class="line8img"><img src="./images/8-2.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="fas fa-tv"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                        </span>
+                    </div>
                     <div class="line8text">
                         <h3>Christopher Campbell</h3>
                         <p>Branding/UX design</p>
                     </div>
                 </div>
                 <div class="line8in">
-                    <div class="line8img"><img src="./images/8-3.jpg"></div>
+                    <div class="line8img"><img src="./images/8-3.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="fas fa-tv"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                            <span class="llll"><i class="far fa-clock"></i></span>
+                        </span>
+                    </div>
                     <div class="line8text">
                         <h3>Michael Fertig</h3>
                         <p>Developer</p>
@@ -177,7 +320,16 @@
             </div>
         </section>
         <section class="cont9">
-
+            <div class="container">
+            <div class="row meinline9">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-1.jpg" alt="Brend1">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-2.jpg" alt="Brend2">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-3.jpg" alt="Brend3">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-4.jpg" alt="Brend4">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-5.jpg" alt="Brend5">
+                <img class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6" src="./images/9-6.jpg" alt="Brend6">
+            </div>
+            </div>
         </section>
         <section class="cont10">
             <h2 class="what">What we do</h2>
@@ -189,67 +341,153 @@
                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
                  commodo consequat. </p>
             <div class="meinline10">
-                    <div class="item10"><img src="./images/10-1.jpg"></div>
-                    <div class="item10"><img src="./images/10-2.jpg"></div>
-                    <div class="item10"><img src="./images/10-3.jpg"></div>
-                    <div class="item10"><img src="./images/10-4.jpg"></div>
-                    <div class="item10"><img src="./images/10-5.jpg"></div>
-                    <div class="item10"><img src="./images/10-6.jpg"></div>
-                    <div class="item10"><img src="./images/10-7.jpg"></div>
-                </div>
+                    <div class="item10"><img src="./images/10-1.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="far fa-clock"></i>
+                            <h5>PHOTOGRAPHY</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-2.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="fas fa-chart-line"></i>
+                            <h5>WEB DESIGN</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-3.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="fas fa-tv"></i>
+                            <h5>CREATIVITY</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-4.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="fab fa-leanpub"></i>
+                            <h5>SEO</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-5.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="fas fa-home"></i>
+                            <h5>CSS/HTML</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-6.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="far fa-image fa-2x"></i>
+                            <h5>CREATIVELY DESIGNED</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
+                    <div class="item10"><img src="./images/10-7.jpg">
+                        <span class="pic-caption bottom-to-top">
+                            <i class="fas fa-expand"></i>
+                            <h5>DIGITAL</h5>
+                            <p class="texttop">Lorem ipsum dolor sit</p>
+                        </span>
+                    </div>
             </div>
         </section>
         <section class="cont11">
-
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cont11karusel">
+                            <img class="d-block w-10 cont11img" src="./images/12-1.jpg" alt="Slide 1">
+                            <div class="cont11text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br>
+                            <span class="redline rl11"></span>
+                            <h2 class="cont11name">Mattew Dix</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cont11karusel">
+                            <img class="d-block w-10 cont11img" src="./images/12-2.jpg" alt="Slide 2">
+                            <div class="cont11text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br>
+                                <span class="redline rl11"></span>
+                                <h2 class="cont11name">Jaelynn Castillo</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cont11karusel">
+                            <img class="d-block w-10 cont11img" src="./images/12-3.jpg" alt="Slide 3">
+                            <div class="cont11text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation.”<br> 
+                                <span class="redline rl11"></span>
+                                <h2 class="cont11name">  Nick Karvounis</h2>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon clrr" aria-hidden="true"></span>
+                        <span class="sr-only ">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </section>
         <section class="cont12">
             <h2 class="what">Happy clients</h2>
             <h2 class="story">WHAT PEOPLE SAY</h2>
             <span class="redline"></span>
-            <div class="meinline12">
-                <div class="line12">
-                    <div><img src="./images/12-1.jpg"></div>
-                    <div>
-                        <H3>MATTHEW DIX</H3>
-                        <p class="design">Graphic Design</p>
-                        <span class="redline redline12"></span>
-                        <p>Lorem insum dolor sit amet, consectetur adipiscing elit,<br>
-                            sed do eiusmod tempor incididunt ut labore et dolore<br>
-                            magna aliqua. Ut enim ad minim.</p></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="media col-xl-6 col-lg-6 col-md-6 line12">
+                            <img src="./images/12-1.jpg" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">MATTHEW DIX</h5>
+                                <p class="design">Graphic Design</p>
+                                <span class="redline redline12"></span>
+                                <p>Lorem insum dolor sit amet, consectetur adipiscing elit,<br>
+                                sed do eiusmod tempor incididunt ut labore et dolore<br>
+                                magna aliqua. Ut enim ad minim.</p></div>
+                          </div>
+                          <div class="media col-xl-6 col-lg-6 col-md-6 line12">
+                            <img src="./images/12-2.jpg" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">JAELYNN CASTILLO</h5>
+                                <p class="design">Graphic Design</p>
+                                <span class="redline redline12"></span>
+                                <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+                                    eiusmod tempor incididunt ut labore et dolore magna<br>
+                                    aliqua. Ut enim ad minim.</p></div>
+                          </div>
+                          <div class="media col-xl-6 col-lg-6 col-md-6 line12">
+                            <img src="./images/12-3.jpg" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">NICK KARVOUNIS</h5>
+                                <p class="design">Graphic Design</p>
+                                <span class="redline redline12"></span>
+                                <p>Sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut<br>
+                                    enim ad minim.</p></div>
+                          </div>
+                          <div class="media col-xl-6 col-lg-6 col-md-6 line12">
+                            <img src="./images/12-4.jpg" class="align-self-start mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0">MIKE PETRUCCI</h5>
+                                <p class="design">Graphic Design</p>
+                                <span class="redline redline12"></span>
+                                <p>Dolor sit amet, consectetur adipiscing elit, sed do<br>
+                                    eiusmod tempor incididunt ut labore et dolore magna<br>
+                                    aliqua. Ut enim ad minim.</p></div>
+                          </div>
+                    </div>
                 </div>
-                <div class="line12">
-                    <div><img src="./images/12-2.jpg"></div>
-                    <div>
-                        <h3>JAELYNN CASTILLO</h3>
-                        <p class="design">Graphic Design</p>
-                        <span class="redline redline12"></span>
-                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
-                            eiusmod tempor incididunt ut labore et dolore magna<br>
-                            aliqua. Ut enim ad minim.</p></div>
-                </div>
-            </div>
-            <div class="meinline12">
-                <div class="line12">
-                    <div><img src="./images/12-3.jpg"></div>
-                    <div>
-                        <h3>NICK KARVOUNIS</h3>
-                        <p class="design">Graphic Design</p>
-                        <span class="redline redline12"></span>
-                        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                            tempor incididunt ut labore et dolore magna aliqua. Ut<br>
-                            enim ad minim.</p></div>
-                </div>
-                <div class="line12">
-                    <div><img src="./images/12-4.jpg"></div>
-                    <div>
-                        <h3>MIKE PETRUCCI</h3>
-                        <p class="design">Graphic Design</p>
-                        <span class="redline redline12"></span>
-                        <p>Dolor sit amet, consectetur adipiscing elit, sed do<br>
-                            eiusmod tempor incididunt ut labore et dolore magna<br>
-                            aliqua. Ut enim ad minim.</p></div>
-                </div>
-            </div>
         </section>
         <section class="cont13">
             <h2 class="what">Our stories</h2>
@@ -290,6 +528,21 @@
         <section class="footer"></section>
     
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="./js/wow.min.js.gz"></script>
+    <script>
+        new WOW().init();
+        </script>  
+    <script src="./js/script.js"></script> 
+    <script src="./js/owl.carousel.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:1
+        });
+        });
+    </script>
 </body>
 </html>

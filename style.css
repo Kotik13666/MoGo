@@ -22,7 +22,7 @@ body{
     margin: 0 auto;
 }
 
-.conteiner1{
+.cont1, .bgc1{
     background-image: url('./images/stervjatnik.jpg');
     height: 100vh;
     max-height: 1000px;
@@ -30,12 +30,24 @@ body{
     background-size: cover;
     background-position-x: 50%;
 }
+.bgc2{
+    background-image: url('./images/5ground2.jpg');
+}
+.bgc3{
+    background-image: url('./images/12ground2.jpg');
+}
+.bgc4{
+    background-image: url('./images/1ground.jpg');
+}
 header{
     display: flex;
     justify-content: space-between;
 }
 .menu{
     padding-top: 36px;
+}
+.burger{
+    display: none;
 }
 .menu ul{
     display: flex;
@@ -69,19 +81,54 @@ header{
     padding-bottom: 10px;
 }
 .content{
+    height: fit-content;
     text-align: center;
+    padding-bottom: 5px;
 }
+.cont1 .owl-dots button{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: blue;
+}
+
+@media(max-width: 1024px){
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-top: 25px;
+        background-color: #e88582;
+        border: 5px solid #f0d289;
+        border-radius: 50%;
+    }
+    .burgerlines{
+        display: block;
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
+    .show{
+        display: block;
+    }
+}
+
 .content h2{
     font-size: 72px;
     color: #fff;
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 8vh;
 }
 .content h1{
     font-size: 144px;
     text-transform: uppercase;
+    font-weight: bold;
     color: #fff;
 }
 .whiteline{
@@ -103,7 +150,7 @@ header{
     color: #fff;
 }
 
-.conteiner2{
+.cont2{
     height: 750px;
     text-align: center;
 }
@@ -136,45 +183,48 @@ header{
     color: #999999;
     text-align: center;
 }
-.cards{
+.cont2 .cardsblock2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 100px;
     padding-bottom: 110px;
-}
 
-.item{
-    width: 32%;
+    width: 100%;
+    height: 270px;
     /*background-image: url(./images/Zadnik.png);
     background-repeat: no-repeat;
     background-position: 10px 10px;*/
 }
 
-.item img{
+.cont2 .cardsblock2 .item img{
     z-index: 3;
     position: relative;
     max-width: 100%;
     margin: 10px;
     transition: 0.5s;
 }
-.item img:hover{                         /* криво и косо, но пока хоть как-то*/
+.cont2 .cardsblock2 .item img:hover{                         /* криво и косо, но пока хоть как-то*/
     margin: 0 20px 20px 0;
     box-shadow: 10px 10px #95e1d3;
     transition: 0.5s;
     z-index: 1;
     /*transform: translate3d(-10px -10px 0);*/
 }
-.item p{
+.item:hover .item p{
+    z-index: 4;
+}
+.cont2 .cardsblock2 .item p{
     text-transform: uppercase;
     color: lawngreen;
     position: relative;
     z-index: 2;
     top: -170px;
     transition: 0.5s;
+    opacity: 0.9;
 }
 
-.conteiner3{
+.cont3{
     height: 270px;
     width: 100%;
     background-color: #95e1d3;
@@ -255,15 +305,27 @@ header{
     text-align: right;
 }
 
-.conteiner5{
+.cont5{
+    position: relative;
     height: 850px;
     width: 100%;
     background-image: url(./images/5ground2.jpg);
     background-size: cover;
 }
+.centrpad{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+}
+.necentrpad{
+    position: absolute;
+    bottom: -12%;
+    right: 25%;
+}
 
 
-.conteiner6{
+
+.cont6{
     height: 900px;
 }
 .meinline6{
@@ -282,26 +344,140 @@ header{
     margin-right: 30px;
 }
 .line6-2{
-    background-color: aqua;
+    max-height: 380px;
+    border: none;
+}
+.zagbtt{
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333333;    
+    border: 1px solod #999;
+}
+.zagbtt i{
+    font-size: 30px;
+    color: aqua;
+    position: absolute;
+    transform: translateY(-50%);
+    
+}
+.zagbtttext{
+    position: absolute;
+    transform: translateY(-45%);
+    margin-left: 50px;
+}
+.body6{
+    height: 175px;
+    overflow-y: scroll;
+    font-family: 'Roboto';
+    font-style: italic;
+    color: #a8a8a8;
+    border: 1px solod #a8a8a8;
 }
 
 
-.cont7{
-    height: 290px;
+
+.cont7karusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #f8f8f8;
 }
-
+.cont7text{
+    width: 41%;
+    margin-left: 30px;
+    font-family: Roboto, sans-serif;
+    font-style: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: black;
+}
+.rl7{
+    margin: 0;
+    display: inline-block;
+}
+.cont7name{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: black;
+}
+.cont7img{
+    width: 207px;
+    height: 207px;
+}
 
 
 .meinline8{
     display: flex;
+    justify-content: space-around;
     justify-content: center;
     padding-top: 90px;
     padding-bottom: 120px;
 }
+.line8img{
+    position: relative;
+	overflow: hidden;	
+	display: inline-block;
+}
+/*.llll{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-style: solid;
+}*/
+.line8img:hover .bottom-to-top{
+	opacity: 0.9;
+	top: 0;
+    left: 0;
+    transition: 1s;
+    transform: translate3d(-10px -10px 0);
+    /*box-shadow: 10px 10px #95e1d3;*/
+}
+.pic-caption{
+	cursor: default;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e5bc7f, #e07979);
+	padding: 10px;
+    text-align: center;    
+    opacity: 0;
+    transition: 1s;
+}
+.line8img img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.line8img, .pic-caption{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    transition: all 1s ease;      
+}
+.line8img:hover img, .line8img:hover .pic-caption{
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    transition: all 1s ease;   
+    box-shadow: 10px 10px #95e1d3; 
+}
 .line8in{
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.line8img i{  
+    font-size: 30px;          
+    color: #ffffff; 
+    padding-top: 50%;
 }
 .line8text{
     text-align: center;
@@ -319,40 +495,95 @@ header{
 
 
 .cont9{
-    height: 250px;
     width: 100%;
-    background-image: url(./images/9.jpg);
-    background-position: center;
     background-color: #f8f8f8;
-    background-size:auto;
-    background-repeat: no-repeat;
+}
+.meinline9{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+    justify-content: space-around;
+    justify-items: center;
 }
 
 
 .meinline10{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 390px 390px;/*1fr 1fr;*/
-    margin-top: 90px;
-    /*line-height: 0;*/
+    grid-template-rows: 390px 390px;
+    margin-top: 90px;    
+    
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
 }
-.item10{
-    overflow: hidden;
+.meinline10 .item10{
+	position: relative;
+	overflow: hidden;	
+	display: inline-block;
 }
-.item10 img{
-    display: block;
+.item10:hover .bottom-to-top{
+	opacity: 0.9;
+	top: 0;
+    left: 0;
+    transition: 1s;
+}
+.pic-caption{
+	cursor: default;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #e5bc7f, #e07979);
+	padding: 10px;
+    text-align: center;    
+    opacity: 0;
+    transition: 1s;
+}
+.meinline10 .item10 img{
     max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
 }
-.item10 img:hover{
-    transform: scale(1.2);
-}
-.item10:nth-child(3){
-    grid-column: 3/4;
+.meinline10 .item10:nth-child(3){
     grid-row: 1/3;
+    grid-column: 3/4;    
+}
+.item10 i{  
+    font-size: 40px;          
+    color: #ffffff; 
+    padding-top: 28%;
+}
+.meinline10 .item10:nth-child(3) i{
+    padding-top: 70%;  
+}
+.item10 h5{
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 20px;    
+}
+.item10 .pic-caption .texttop{        
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #ffffff;
+    margin-top: 15px;           
+}
+.item10, .item10 img, .pic-caption, .item10:hover .pic-caption, .item10:hover img{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    transition: all 1s ease;      
+}
+.meinline10 .item10:nth-child(3):hover .pic-caption{ 
+    background: linear-gradient(to top, #e5bc7f, #e07979);       
+    opacity: 0.8;          
 }
  @media(max-width:800px){
     .meinline10{
@@ -366,9 +597,38 @@ header{
  }
 
 
-.cont11{
-    height: 440px;
+ .cont11karusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f8f8f8;
 }
+.cont11text{
+    width: 41%;
+    margin-left: 30px;
+    font-family: Roboto, sans-serif;
+    font-style: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: black;
+}
+.rl11{
+    margin: 0;
+    display: inline-block;
+}
+.cont11name{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: black;
+}
+.cont11img{
+    width: 207px;
+    height: 207px;
+    border-radius: 50%;
+}
+
 
 
 
@@ -377,18 +637,9 @@ header{
     background-image: url(./images/12ground2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-image: linear-gradient(white, gray);*/
-}
-.meinline12{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 45px;
 }
 .line12{
-    display: flex;
-    width: 40%;
-    height: 230px;
+    padding-top: 45px;
 }
 .line12 img{
     size: 110px;
@@ -400,15 +651,18 @@ header{
     margin-top: 1em;
     margin-bottom: 1.5em;
 }
-.line12 h3{
-    font-size: 15px;
+.line12 h5{
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 .line12 p{
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Roboto';
     color: #5b5c88;
 }
 .design{
+    font-family: 'Roboto';
     font-style: italic;
     margin-top: 1em;
 }
